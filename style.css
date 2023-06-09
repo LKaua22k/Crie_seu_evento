@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --back-body1:#121214;
+    --back-body2:#E5E5E5;
+    --title-color:#ffffff;
+    --label-color:#4E4958;
+    --span-color:#a9a7af;
+    --legend-color:#32264D;
+    --back-input:#FAFAFC;
+    --border-input:#E6E6F0;
+    --back-footer:#F0F0F4;
+    --button-color:#04D361;
+
+    --font-archivo:'Archivo', sans-serif;
+    --font-poppins:'Poppins', sans-serif;
+
+    font-size: 62.5%;
+}
+
+body{
+    background: var(--back-body2);
+    font-size: 1.6rem;
+}
