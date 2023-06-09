@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+body, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
 :root{
     --back-body1:#121214;
     --back-body2:#E5E5E5;
     --title-color:#ffffff;
+    --subtitle-color:#42D3FF;
     --label-color:#4E4958;
     --span-color:#a9a7af;
     --legend-color:#32264D;
@@ -25,4 +30,32 @@
 body{
     background: var(--back-body2);
     font-size: 1.6rem;
+}
+
+.container{
+    max-width: 73.6rem;
+    margin: 0 auto;
+}
+
+header{
+    max-width: 31.9rem;
+}
+
+header h1{
+    color: var(--title-color);
+    font-family: var(--font-archivo);
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    font-weight: bold;
+}
+
+header p{
+    font-size:1.6rem;
+    line-height:2.6rem;
+    color:var(--subtitle-color) ;
+}
+
+form{
+    background-color: var(--back-input);
+    min-height: 30rem;
 }
