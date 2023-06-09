@@ -15,6 +15,7 @@ body, input, select, textarea {
     --subtitle-color:#42D3FF;
     --label-color:#4E4958;
     --span-color:#a9a7af;
+    --span-hover-color:#6c6a71;
     --legend-color:#32264D;
     --back-input:#FAFAFC;
     --border-input:#E6E6F0;
@@ -60,7 +61,6 @@ header h1{
     line-height: 4.2rem;
     font-weight: bold;
     margin-bottom: 2.4rem;
-    width: 100%;
 }
 
 header p{
@@ -90,4 +90,59 @@ form legend{
     line-height: 3.4rem;
     border-bottom: 1px solid var(--border-input);
     padding-bottom: 1.6rem;
+    width: 100%;
 }
+
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--label-color);
+    margin-bottom:0.8rem;
+}
+
+.input-wrapper label span{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--span-color);
+    margin-left: 1.2rem;
+}
+
+.input-wrapper label span:hover{
+    color: var(--span-hover-color);
+}
+
+.input-wrapper input,textarea,select{
+    background: var(--back-input);
+    border: 1px solid var(--border-input);
+    height: 5.6rem;
+    padding: 0 2.4rem;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--span-hover-color);
+}
+
+.input-wrapper textarea{
+    padding: 0;
+    height: 15.6rem;
+}
+
+.input-wrapper select{
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_36101_2)'%3E%3Cmask id='mask0_36101_2' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Cpath d='M24 0H0V24H24V0Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_36101_2)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_36101_2'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 2.4rem top 50%;
+}
+
