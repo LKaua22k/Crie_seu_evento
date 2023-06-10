@@ -103,7 +103,39 @@
 
                 </div>
             </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">    
+                    <legend>Dia e hora</legend>
+                    <div class="col-3">    
+                        <div class="input-wrapper">
+                            <label for="event-date">
+                                Data
+                            </label>
+                            <input type="date" name="event-date" id="event-date" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-das">
+                                Das
+                            </label>
+                            <input type="time" name="event-das" id="event-das" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-ate">
+                                Até
+                            </label>
+                            <input type="time" name="event-ate" id="event-ate" required>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
         </form>
+
+        <footer>
+            <input type="submit" form="form" value="Salvar evento">
+        </footer>
     </div>
 </body>
 </html>
