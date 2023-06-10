@@ -70,8 +70,38 @@
                         <option>Mentoria</option>
                        </select>
                     </div>
-
                 </div>    
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">    
+                    <legend>Privacidade</legend>
+
+                    <div class="input-wrapper">
+                        <label for="event-email">
+                            E-mail do administrador
+                            <span>(digite um email válido)</span>
+                        </label>
+                        <input type="email" name="event-email" id="event-email" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-password">
+                            Senha de acesso para os participantes
+                            <span>(mínimo 8 caracteres)</span>
+                        </label>
+                        <input type="password" name="event-password" id="event-password" required>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="event-priv" id="event-priv" required>
+                        
+                        <label for="event-priv">
+                            Evento privado
+                        </label>
+                    </div>
+
+                </div>
             </fieldset>
         </form>
     </div>
